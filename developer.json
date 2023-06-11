@@ -1,6 +1,6 @@
 {
     "name": "Eftakhar Ahmed Arnob",
-    "logo_name": "eftakhar-ahmed-arob",
+    "logo_name": "eftakhar-ahmed-arnob",
     "role": "Software Engineer",
     "about": {
         "sections": {
@@ -28,18 +28,18 @@
                 "info": {
                     "bio": {
                         "title": "bio",
-                        "description": "<br> About me <br> I have 5 years of experience in web development lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  nulla pariatur. Excepteur sint occaecat  officia deserunt mollit anim id est laborum."
+                        "description": "<br> About me <br>I work as a software engineer, developed a good number softwares and worked on some research works. But I'm also really into robotics and electronics. I enjoy solving programming problems and working with IoT devices. It's exciting for me to blend software programs with physical hardware to create awesome things! Oh, I almost forgot to mention that I also work on developing desktop interfaces and web applications."
                     },
                     "interests": {
                         "title": "interests",
-                        "description": "<br>I am constantly learning and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        "description": "<br>I am very much interested to work with robotics or IoT devices. Also I am very passionate about Artificial Intelligence, I want to give robots the power of artificial intelligence. Sounds evil, right? ;) . Oh, let's talk about my personal interests, I love playing football, video games, travelling and also I am a foodie :D ."
                     },
                     "education": {
                         "title": "education",
-                        "description": "<br>I have always been passionate about lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                        "description": "<br>I have completed my B.Sc (Engineering) in Computer Science & Engineering. Currently looking forward to either doing my PhD or colaborating with any research lab of my interest.",
                         "files": {
-                            "high-school": "I have been in 'Las viñas'...",
-                            "university": "The university..."
+                            "Dhaka Imperial College (HSC)": "Studied Science...",
+                            "North East University Bangladesh (B.Sc)": "Studied Computer Science & Engineering..."
                         }
                     }
                 }
@@ -64,8 +64,8 @@
         "direct": {
             "title": "contacts",
             "sources": {
-                "email": "user@gmail.com",
-                "phone": "+3598246359"
+                "email": "arnab@dorik.io",
+                "phone": "+880 1926 496967"
             }
         },
         "social": {
@@ -98,10 +98,10 @@
                     "url": "https://www.youtube.com/",
                     "user": "iftekhararnab"
                 },
-                "gurushots": {
-                    "title": "GuruShots profile",
-                    "url": "https://gurushots.com/",
-                    "user": "username"
+                "codeforces": {
+                    "title": "Codeforces profile",
+                    "url": "https://codeforces.com/profile/",
+                    "user": "arnab.xero"
                 },
                 "instagram": {
                     "title": "Instagram account",
@@ -117,8 +117,8 @@
         }
     },
     "gists": {
-        "1": "83861a67e377633ee8368df01ee3a355",
-        "2": "694c1f32332788a2ac7f37b09e5aa40e"
+        "1": "7c3ad22fbab7655e91c4b3dc7f5d0f9c",
+        "2": "ddf935bc394fc6829341a5e1a62410cd"
     },
     "projects": {
         "1": {
