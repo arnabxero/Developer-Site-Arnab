@@ -39,6 +39,9 @@
 						"https://github.com/{{ config.public.dev.contacts.social.github.user }}"
 					</a>
 				</p>
+        <span id="info">
+          <a href="files/arnob_cv_23_may.pdf" style="color:white; font-weight: bold;" class="btn btn-primary">Download CV</a>
+        </span>
 			</div>
 		</section>
 

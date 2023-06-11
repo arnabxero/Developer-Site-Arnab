@@ -79,10 +79,10 @@
                 "url": "https://facebook.com/",
                 "user": "official.arnab"
             },
-            "twitter": {
-                "title": "Twitter account",
-                "url": "https://twitter.com/",
-                "user": "arnabxero"
+            "linkedin": {
+                "title": "LinkedIn account",
+                "url": "https://www.linkedin.com/in/",
+                "user": "arnab-xero"
             }
         },
         "find_me_also_in": {

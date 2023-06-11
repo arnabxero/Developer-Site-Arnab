@@ -4,4 +4,4 @@
       <slot />
       <AppFooter />
     </div>
-  </template>
+</template>

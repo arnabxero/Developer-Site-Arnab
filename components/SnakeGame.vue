@@ -124,7 +124,7 @@
 
         // start game
         this.gameStarted = true;
-        this.gameInterval = setInterval(this.moveSnake, 50);
+        this.gameInterval = setInterval(this.moveSnake, 200);
       },
       startAgain() {
         // Mostrar botón de start-game
