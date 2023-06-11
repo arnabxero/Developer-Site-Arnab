@@ -83,6 +83,11 @@
                 "title": "LinkedIn account",
                 "url": "https://www.linkedin.com/in/",
                 "user": "arnab-xero"
+            },
+            "youtube": {
+                "title": "Youtube account",
+                "url": "https://www.youtube.com/",
+                "user": "iftekhararnab"
             }
         },
         "find_me_also_in": {
