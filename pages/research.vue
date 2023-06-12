@@ -2,20 +2,20 @@
   <main v-if="!loading" class="flex flex-col flex-auto lg:flex-row overflow-hidden">
 
     <div id="mobile-page-title">
-      <h2>_projects</h2>
+      <h2>_researches</h2>
     </div>
 
     <!-- section title (mobile) -->
     <div id="section-content-title" class="flex lg:hidden" @click="hiddeSection()">
       <img class="section-arrow" src="/icons/arrow.svg">
-      <p class="font-fira_regular text-white text-sm">projects</p>
+      <p class="font-fira_regular text-white text-sm">researches</p>
     </div>
     
     <div id="filter-menu" class="w-full flex-col border-right font-fira_regular text-menu-text hidden lg:flex">
       <!-- title -->
       <div id="section-content-title" class="hidden lg:flex items-center min-w-full">
         <img id="section-arrow-menu" src="/icons/arrow.svg" alt="" class="section-arrow mx-3 open">
-        <p class="font-fira_regular text-white text-sm">projects</p>
+        <p class="font-fira_regular text-white text-sm">researchese</p>
       </div>
 
       <!-- filter menu -->
@@ -23,7 +23,7 @@
   
         <div v-for="tech in techs" :key="tech" class="flex items-center py-2">
           <input type="checkbox" :id="tech" @click="filterProjects(tech)">
-          <img :id="'icon-tech-' + tech" :src="'/icons/techs/' + tech + '.svg'" alt="" class="tech-icon w-5 h-5 mx-4">
+          <img :id="'icon-tech-' + tech" :src="'/icons/folder.svg'" alt="" class="tech-icon w-5 h-5 mx-4">
           <span :id="'title-tech-' + tech">{{ tech }}</span>
         </div>
       </nav>
@@ -63,28 +63,28 @@
           </span>
         </div>
 
-        <div id="project" v-for="(project, key, index) in projects" :key="key" class="lg:mx-5">
+        <div id="project" v-for="(research, key, index) in research" :key="key" class="lg:mx-5">
           <!-- title -->
           <span class="flex text-sm my-3">
-            <h3 v-if="index == null" class="text-purplefy font-fira_bold mr-3">Project {{ key + 1 }}</h3>
-            <h3 v-else class="text-purplefy font-fira_bold mr-3">Project {{ index + 1 }}</h3>
-            <h4 class="font-fira_retina text-menu-text"> // {{ project.title }}</h4>
+            <h3 v-if="index == null" class="text-purplefy font-fira_bold mr-3">Research {{ key + 1 }}</h3>
+            <h3 v-else class="text-purplefy font-fira_bold mr-3">Research {{ index + 1 }}</h3>
+            <h4 class="font-fira_retina text-menu-text"> // {{ research.title }}</h4>
           </span>
 
           <!-- info -->
           <div id="project-card" class="flex flex-col">
             <div id="window">
               <div class="absolute flex right-3 top-3">
-                <img v-for="tech in project.tech" :key="tech" :src="'/icons/techs/filled/' + tech + '.svg'" alt="" class="w-6 h-6 mx-1 hover:opacity-75">
+                <img v-for="tech in research.tech" :key="tech" :src="'/icons/folder.svg'" alt="" class="w-6 h-6 mx-1 hover:opacity-75">
               </div>
-              <img id="showcase" :src="project.img" alt="" class="">
+              <img id="showcase" :src="research.img" alt="" class="">
             </div>
 
             <div class="pb-8 pt-6 px-6 border-top">
               <p class="text-menu-text font-fira_retina text-sm mb-5">
-                {{ project.description }}
+                {{ research.description }}
               </p>
-              <a id="view-button" :href="project.url" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg">
+              <a id="view-button" :href="research.url" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg">
                   view-project
               </a>
             </div>
@@ -255,14 +255,14 @@ export default {
   data() {
     return {
       //techs: ['React', 'HTML', 'CSS', 'Vue', 'Angular', 'Gatsby', 'Flutter'],
-      techs: ['PHP', 'Python', 'Java', 'JavaScript', 'C++', 'Robotics', 'IoT'],
+      techs: ['Thesis', 'Project', 'Research', 'Other'],
       filters: ['all'],
       projects: '',
       loading: true,
     };
   },
   mounted() {
-    this.projects = this.config.public.dev.projects;
+    this.research = this.config.public.dev.research;
     this.loading = false;
   },
   methods: {
@@ -279,9 +279,9 @@ export default {
         this.filters = this.filters.filter((item) => item !== tech); // remove tech from filters
         this.filters.length === 0 ? this.filters.push('all') : null; // add 'all' to filters if filters is empty
       }
-      this.filters[0] == 'all' ? this.projects = this.config.public.dev.projects : this.projects = this.filterProjectsBy(this.filters);
+      this.filters[0] == 'all' ? this.research = this.config.public.dev.research : this.research = this.filterProjectsBy(this.filters);
 
-      if(this.projects.length === 0){
+      if(this.research.length === 0){
         // set flex to projects-case
         document.getElementById('projects-case').classList.remove('grid');
         document.getElementById('not-found').classList.remove('hidden');
@@ -304,7 +304,7 @@ export default {
      * @param {*} filters is an array with techs names.
      */
     filterProjectsBy(filters) {
-      const projectArray = Object.values(this.config.public.dev.projects);
+      const projectArray = Object.values(this.config.public.dev.research);
       return projectArray.filter(project => {
         return filters.some(filter => project.tech.includes(filter)); // change here your condition 'some' or 'every'
       });

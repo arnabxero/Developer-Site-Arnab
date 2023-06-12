@@ -122,58 +122,130 @@
     },
     "projects": {
         "1": {
-            "title": "_ui-animations",
-            "description": "Duis aute irure dolor in velit esse cillum dolore.",
-            "img": "/images/projects/ui-animations2.png",
+            "title": "ReachMe-Social Media",
+            "description": "This social media website is built using PHP, HTML5, CSS3, and JavaScript, featuring chat, posts, likes, comments, sharing, and media uploads. It includes friendlists, notifications, admin and moderator panels, utilizing technologies like jQuery, AJAX, MySQL, Bootstrap, Font Awesome, Google Fonts, and CKEditor.",
+            "img": "/images/projects/reachme.jpg",
             "tech": [
-                "Flutter"
+                "PHP",
+                "JavaScript"
             ],
-            "url": "https://github.com/"
+            "url": "https://youtu.be/ICv4IHnHEuc"
         },
         "2": {
-            "title": "_ai-resources",
-            "description": "Duis aute irure dolor in velit esse cillum dolore.",
-            "img": "/images/projects/ai-resources.png",
+            "title": "Foodie-Restaurant Finder",
+            "description": "This is a restaurant & food review and reccomendation website built using PHP, HTML5, CSS3, and JavaScript, featuring restaurant search, reviews, ratings, and recommendations. It includes user profiles, friendlists, notifications, admin and moderator panels, utilizing technologies like jQuery, AJAX, MySQL, Bootstrap, Font Awesome, Google Fonts, and CKEditor.",
+            "img": "/images/projects/foodie.jpeg",
             "tech": [
-                "Gatsby"
+                "PHP",
+                "JavaScript"
             ],
-            "url": "https://github.com/"
+            "url": "https://youtu.be/djQF7OkdLpY"
         },
         "3": {
-            "title": "_worldmap",
-            "description": "Duis aute irure dolor in velit esse cillum dolore.",
-            "img": "/images/projects/worldmap.png",
+            "title": "Python Robot Controller",
+            "description": "This is a python GUI to control a robot, this project is currently under a PhD research, so can't reveal much of it.",
+            "img": "/images/projects/python-gui.png",
             "tech": [
-                "Angular"
+                "Python",
+                "Robotics"
             ],
-            "url": "https://github.com/"
+            "url": "https://github.com/arnabxero"
         },
         "4": {
-            "title": "_ui-animations",
-            "description": "Duis aute irure dolor in velit esse cillum dolore.",
-            "img": "/images/projects/ui-animations.png",
+            "title": "Python Robot Controller 2",
+            "description": "This is another python GUI to control a bio-robotic sensory system, this project is currently under a PhD research, so can't reveal much of it.",
+            "img": "/images/projects/python-gui2.png",
             "tech": [
-                "React"
+                "Python",
+                "Robotics"
             ],
-            "url": "https://github.com/"
+            "url": "https://github.com/arnabxero"
         },
         "5": {
-            "title": "_tetris-game",
-            "description": "Duis aute irure dolor in velit esse cillum dolore.",
-            "img": "/images/projects/tetris-game.png",
+            "title": "Robotic Arm with Auto & Manual Control",
+            "description": "I made an robotic arm controllable semi automatically or full manually by the control panel. I was initially planned to use glove control but lack of fund and materials/components forced me to implement the arm with the control panel instead of using a hand glove control.",
+            "img": "/images/projects/robotic-arm.jpeg",
             "tech": [
-                "React"
+                "Robotics",
+                "IoT"
             ],
-            "url": "https://github.com/"
+            "url": "https://youtu.be/O0rxHLX0vk0"
         },
         "6": {
-            "title": "_ethereum",
-            "description": "Duis aute irure dolor in velit esse cillum dolore.",
-            "img": "/images/projects/ethereum.png",
+            "title": "NEUB CodeLand Forum Website",
+            "description": "This was my first dynamic website project using php.",
+            "img": "/images/projects/codeland.jpeg",
             "tech": [
-                "Vue"
+                "PHP"
             ],
-            "url": "https://github.com/"
+            "url": "https://youtu.be/Y_G0NQBbZ44"
+        },
+        "7": {
+            "title": "Automated Water Pump Controller",
+            "description": "This is one of my IoT projects, I made this to control the water pump automatically based on the water level in the tank.",
+            "img": "/images/projects/waterlevel.jpeg",
+            "tech": [
+                "IoT"
+            ],
+            "url": "https://youtu.be/wd-rCnabbLY"
+        },
+        "8": {
+            "title": "Game - Cave Advemture",
+            "description": "This is a simple 2D game I made using Java Swing and AWT.",
+            "img": "/images/projects/horror-cave.jpeg",
+            "tech": [
+                "Java"
+            ],
+            "url": "https://youtu.be/WOkC11EPrkU"
+        },
+        "9": {
+            "title": "Internet Controlled Robotics Car",
+            "description": "This is a robotic car that can be controlled via wifi locally and also can be controlled via internet from anywhere in the world.",
+            "img": "/images/projects/esp-car.jpeg",
+            "tech": [
+                "Robotics",
+                "IoT"
+            ],
+            "url": "https://youtu.be/q7FhLXdcjRc"
+        },
+        "10": {
+            "title": "Simple Calculator App",
+            "description": "This is a simple calculator app I made using Java Swing and AWT.",
+            "img": "/images/projects/java-calculator.png",
+            "tech": [
+                "Java"
+            ],
+            "url": "https://youtu.be/-427HjhFchQ"
+        },
+        "11": {
+            "title": "Bank Management Application",
+            "description": "This is a bank management app I made using Java Swing and AWT.",
+            "img": "/images/projects/bank.jpg",
+            "tech": [
+                "Java"
+            ],
+            "url": "https://youtu.be/-BAdWcUSlS8"
+        },
+        "12": {
+            "title": "Demo Operating System",
+            "description": "This is a demo operating system and file manager app I made using Java Swing and AWT.",
+            "img": "/images/projects/os.jpg",
+            "tech": [
+                "Java"
+            ],
+            "url": "https://youtu.be/cKHoxuBoq0Y"
+        }
+    },
+    "research": {
+        "1": {
+            "title": "Thesis Research",
+            "description": "This is our thesis research, we trained an encoder decoder machine learning model to complete partially drawn shapes.",
+            "img": "/images/researches/thesis.png",
+            "tech": [
+                "Thesis",
+                "Research"
+            ],
+            "url": "https://github.com/arnabxero/thesis"
         }
     }
 }
