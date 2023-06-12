@@ -41,6 +41,15 @@ export default {
         }
     },
     mounted() {
+        const script = document.createElement('script');
+        script.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js';
+        script.type = 'text/javascript';
+        script.async = true;
+        script.onload = () => {
+            emailjs.init('aL7MXoQrNT75g3M4J');
+        };
+        document.head.appendChild(script);
+
         document.getElementById("contact-form").addEventListener("submit", function (event) {
             event.preventDefault();
             const name = document.querySelector('input[name="name"]').value;
@@ -49,15 +58,8 @@ export default {
 
             // Here the code to send the email
 
-            const script = document.createElement('script');
-            script.src = 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js';
-            script.type = 'text/javascript';
-            script.async = true;
-            script.onload = () => {
-                emailjs.init('aL7MXoQrNT75g3M4J');
-            };
 
-            document.head.appendChild(script);
+
 
             const serviceID = 'default_service';
             const templateID = 'template_9nznyea';
