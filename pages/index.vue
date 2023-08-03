@@ -1,89 +1,92 @@
 <template>
-  	<main v-if="!loading" id="hello">
+  <main v-if="!loading" id="hello">
 
-    	<!-- gradients -->
-    	<div class="css-blurry-gradient-blue"></div>
-    	<div class="css-blurry-gradient-green"></div>
+    <!-- gradients -->
+    <div class="css-blurry-gradient-blue"></div>
+    <div class="css-blurry-gradient-green"></div>
 
-		<section class="hero">
-		
-			<div class="head">
-				<span>
-					Hi all, I am
-				</span>
-				<h1>{{ config.dev.name }}</h1>
-				<h2>> {{ config.dev.role }}</h2>
-			</div>
+    <section class="hero">
 
-			<div id="info">
-				<span class="action">
-					// complete the game to continue
-				</span>
-				<span :class="{hide: isMobile}">
-					// you can also see it on my Github page
-				</span>
-				<span :class="{hide: !isMobile}">
-					// find my profile on Github:
-				</span>
-				<p class="code">
-					<span class="identifier">
-						const
-					</span>
-					<span class="variable-name">
-						githubLink
-					</span>
-					<span class="operator">
-						=
-					</span>
-					<a class="string" :href="'https://github.com/' + config.public.dev.contacts.social.github.user">
-						"https://github.com/{{ config.public.dev.contacts.social.github.user }}"
-					</a>
-				</p>
-        <span id="info">
-          <a href="files/arnob_cv_23_may.pdf" style="color:white; font-weight: bold;" class="btn btn-primary">Download CV</a>
+      <div class="head">
+        <span>
+          Hi all, I am
         </span>
-			</div>
-		</section>
+        <h1>{{ config.dev.name }}</h1>
+        <h2>> {{ config.dev.role }}</h2>
+      </div>
 
-		<section data-aos="fade-up" class="game" v-if="!isMobile">
-			<SnakeGame />
-		</section>
+      <div id="info">
+        <span class="action">
+          // complete the game to continue
+        </span>
+        <span :class="{ hide: isMobile }">
+          // you can also see it on my Github page
+        </span>
+        <span :class="{ hide: !isMobile }">
+          // find my profile on Github:
+        </span>
+        <p class="code">
+          <span class="identifier">
+            const
+          </span>
+          <span class="variable-name">
+            githubLink
+          </span>
+          <span class="operator">
+            =
+          </span>
+          <a class="string" :href="'https://github.com/' + config.public.dev.contacts.social.github.user">
+            "https://github.com/{{ config.public.dev.contacts.social.github.user }}"
+          </a>
+        </p>
+        <span id="info">
+          <a href="files/arnob_cv_23_may.pdf" style="color:white; font-weight: bold;" class="btn btn-primary">Download
+            CV</a>
+        </span>
+      </div>
+    </section>
 
-	</main>
+    <section data-aos="fade-up" class="game" v-if="!isMobile">
+      <SnakeGame />
+    </section>
+
+  </main>
 </template>
 
 <style>
-
-#hello { 
+#hello {
   display: flex;
   height: 100%;
   width: 100%;
   flex: 1 1 auto;
   padding-left: 275px;
   overflow: hidden;
-  /* padding-top: 5rem; */ /* 80px */
+  /* padding-top: 5rem; */
+  /* 80px */
 }
+
 .hero {
-	width: 100%;
-	justify-content: center;
-	
+  width: 100%;
+  justify-content: center;
+
 }
+
 .game {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	height: 100%;
-	justify-content: center;
-/* 	align-items: center; */
-	z-index: 20;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  /* 	align-items: center; */
+  z-index: 20;
 }
 
 #hello .hero {
-	display: flex;
-	flex-direction: column;
-	/* display: grid;
+  display: flex;
+  flex-direction: column;
+  /* display: grid;
 	grid-template-columns: repeat(12, minmax(0, 1fr)); */
-	margin: 0rem;
+  margin: 0rem;
 }
 
 
@@ -99,8 +102,10 @@
   line-height: 1;
   color: #E5E9F0;
   font-family: 'Fira Code Regular';
-  padding-top: 1rem; /* 16px */
-  padding-bottom: 1rem; /* 16px */
+  padding-top: 1rem;
+  /* 16px */
+  padding-bottom: 1rem;
+  /* 16px */
 }
 
 #hello .head h2 {
@@ -115,16 +120,17 @@
 }
 
 #info {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-#info > span {
+#info>span {
   font-size: 14px;
   line-height: 1;
   color: #607B96;
   font-family: 'Fira Code Retina';
-  padding-bottom: 1rem; /* 16px */
+  padding-bottom: 1rem;
+  /* 16px */
 }
 
 .code {
@@ -151,11 +157,11 @@
 }
 
 #info {
-	padding-block: 2.5rem;
+  padding-block: 2.5rem;
 }
 
 #info .action {
-	display: flex
+  display: flex
 }
 
 .hide {
@@ -168,10 +174,10 @@
   right: 5%;
   width: 300px;
   height: 300px;
-	border-radius: 0% 0% 50% 50%;
+  border-radius: 0% 0% 50% 50%;
   rotate: 10deg;
-	filter: blur(70px);
-  background: radial-gradient(circle at 50% 50%,rgba(77, 91, 206, 1), rgba(76, 0, 255, 0));
+  filter: blur(70px);
+  background: radial-gradient(circle at 50% 50%, rgba(77, 91, 206, 1), rgba(76, 0, 255, 0));
   opacity: 0.5;
   z-index: 10;
 }
@@ -182,9 +188,9 @@
   right: 30%;
   width: 300px;
   height: 300px;
-	border-radius: 0% 50% 0% 50%;
-	filter: blur(70px);
-  background: radial-gradient(circle at 50% 50%,rgba(67, 217, 173, 1), rgba(76, 0, 255, 0));
+  border-radius: 0% 50% 0% 50%;
+  filter: blur(70px);
+  background: radial-gradient(circle at 50% 50%, rgba(67, 217, 173, 1), rgba(76, 0, 255, 0));
   opacity: 0.5;
   z-index: 10;
 }
@@ -197,52 +203,59 @@
 /* mobile */
 @media (max-width: 768px) {
 
-	#hello {
-		padding-left: 0;
-	}
+  #hello {
+    padding-left: 0;
+  }
 
-	#hello .hero {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		margin: 1.75rem; /* 28px */
-	}
-	.head {
-		padding-top: 4rem; /* 40px */
-	}
+  #hello .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1.75rem;
+    /* 28px */
+  }
 
-	#hello .head h2 {
-		font-size: 20px;
-		color: #43D9AD;
-	}
-	
-	#info .action {
-		display: none;
-	}
+  .head {
+    padding-top: 4rem;
+    /* 40px */
+  }
+
+  #hello .head h2 {
+    font-size: 20px;
+    color: #43D9AD;
+  }
+
+  #info .action {
+    display: none;
+  }
 
 }
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
-	#hello {
-		padding-left: 0;
-	}
-	#hello .hero {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		margin: 1.75rem; /* 28px */
-	}
-	.head {
-		padding-top: 4rem; /* 40px */
-	}
+  #hello {
+    padding-left: 0;
+  }
+
+  #hello .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.75rem;
+    /* 28px */
+  }
+
+  .head {
+    padding-top: 4rem;
+    /* 40px */
+  }
 
 }
 
 @media (min-width: 1024px) and (max-width: 1320px) {
-	#hello {
-		padding-left: 135px;
-	}
+  #hello {
+    padding-left: 135px;
+  }
 }
 
 
@@ -274,15 +287,15 @@
   }
 }
 
-@media (min-width: 1920px){
-	#hello {
-		padding-left: 310px;
-	}
-	#hello .head h1 {
-		font-size: 62px;
-	}
-}
+@media (min-width: 1920px) {
+  #hello {
+    padding-left: 310px;
+  }
 
+  #hello .head h1 {
+    font-size: 62px;
+  }
+}
 </style>
 
 <script>
