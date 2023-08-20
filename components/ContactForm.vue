@@ -15,8 +15,7 @@
             <textarea id="message-input" name="message" :placeholder="message" class="placeholder-slate-600"
                 required></textarea>
         </div>
-        <p>After Clicking on The Submit Button, Wait Until The Button Turns Green and Says "message-sent". Otherwise, the
-            message won't be sent!</p>
+        <p class="sm">Wait until button turns green ;)</p>
         <button id="submit-button" type="submit" class="py-2 px-4">submit-message</button>
     </form>
 </template>
