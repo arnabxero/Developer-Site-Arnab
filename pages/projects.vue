@@ -10,7 +10,7 @@
       <img class="section-arrow" src="/icons/arrow.svg">
       <p class="font-fira_regular text-white text-sm">projects</p>
     </div>
-    
+
     <div id="filter-menu" class="w-full flex-col border-right font-fira_regular text-menu-text hidden lg:flex">
       <!-- title -->
       <div id="section-content-title" class="hidden lg:flex items-center min-w-full">
@@ -20,7 +20,7 @@
 
       <!-- filter menu -->
       <nav id="filters" class="w-full flex-col">
-  
+
         <div v-for="tech in techs" :key="tech" class="flex items-center py-2">
           <input type="checkbox" :id="tech" @click="filterProjects(tech)">
           <img :id="'icon-tech-' + tech" :src="'/icons/techs/' + tech + '.svg'" alt="" class="tech-icon w-5 h-5 mx-4">
@@ -32,26 +32,28 @@
     <!-- content -->
 
     <div class="flex flex-col w-full overflow-hidden">
-      
+
       <!-- windows tab -->
       <div class="tab-height w-full hidden lg:flex border-bot items-center">
         <div class="flex items-center border-right h-full">
-          <p v-for="filter in filters" :key="filter" class="font-fira_regular text-menu-text text-sm px-3">{{ filter }};</p>
+          <p v-for="filter in filters" :key="filter" class="font-fira_regular text-menu-text text-sm px-3">{{ filter }};
+          </p>
           <img src="/icons/close.svg" alt="" class="m-3">
         </div>
       </div>
 
       <!-- windows tab mobile -->
       <div id="tab" class="flex lg:hidden items-center">
-          <span class="text-white"> // </span>
-          <p class="font-fira_regular text-white text-sm px-3">projects</p>
-          <span class="text-menu-text"> / </span>
-          <p v-for="filter in filters" :key="filter" class="font-fira_regular text-menu-text text-sm px-3">{{ filter }};</p>
+        <span class="text-white"> // </span>
+        <p class="font-fira_regular text-white text-sm px-3">projects</p>
+        <span class="text-menu-text"> / </span>
+        <p v-for="filter in filters" :key="filter" class="font-fira_regular text-menu-text text-sm px-3">{{ filter }};</p>
       </div>
 
       <!-- projects -->
       <div id="projects-case" class="grid grid-cols-1 lg:grid-cols-2 max-w-full h-full overflow-scroll lg:self-center">
-        <div id="not-found" class="hidden flex flex-col font-fira_retina text-menu-text my-5 h-full justify-center items-center">
+        <div id="not-found"
+          class="hidden flex flex-col font-fira_retina text-menu-text my-5 h-full justify-center items-center">
           <span class="flex justify-center text-4xl pb-3">
             X__X
           </span>
@@ -75,27 +77,47 @@
           <div id="project-card" class="flex flex-col">
             <div id="window">
               <div class="absolute flex right-3 top-3">
-                <img v-for="tech in project.tech" :key="tech" :src="'/icons/techs/filled/' + tech + '.svg'" alt="" class="w-6 h-6 mx-1 hover:opacity-75">
+                <img v-for="tech in project.tech" :key="tech" :src="'/icons/techs/filled/' + tech + '.svg'" alt=""
+                  class="w-6 h-6 mx-1 hover:opacity-75">
               </div>
               <img id="showcase" :src="project.img" alt="" class="">
             </div>
 
             <div class="pb-8 pt-6 px-6 border-top">
-              <p class="text-menu-text font-fira_retina text-sm mb-5">
+              <p class="text-menu-text font-fira_retina text-sm mb-5"
+                :class="{ 'clamp-text': !project.showFullDescription }">
                 {{ project.description }}
               </p>
-              <a id="view-button" :href="project.url" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg">
-                  view-project
-              </a>
+              <div class="flex items-center justify-between">
+                <div>
+                  <a id="view-button" :href="project.url" target="_blank"
+                    class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg">
+                    View Project
+                  </a>
+                </div>
+                <div>
+                  <button @click="toggleDescription(project)" class="text-purplefy font-fira_regular text-sm ">
+                    {{ project.showFullDescription ? '▲ Show Less' : '▼ Read More' }}
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-  </div>
-</main>
+    </div>
+  </main>
 </template>
 
 <style>
+.clamp-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
 
 #filters {
   padding: 10px 25px;
@@ -214,6 +236,7 @@ input[type="checkbox"]:focus {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     padding: 50px 50px 40px;
   }
+
   #project {
     width: 100%;
     min-width: 100%;
@@ -227,6 +250,7 @@ input[type="checkbox"]:focus {
     padding: 50px 80px 40px;
     /* padding: 100px 100px 40px; */
   }
+
   #project {
     width: 100%;
     min-width: 100%;
@@ -238,6 +262,7 @@ input[type="checkbox"]:focus {
   from {
     transform: translate3d(0, -200px, 0);
   }
+
   to {
     transform: translate3d(0, 10px, 0);
   }
@@ -281,17 +306,17 @@ export default {
       }
       this.filters[0] == 'all' ? this.projects = this.config.public.dev.projects : this.projects = this.filterProjectsBy(this.filters);
 
-      if(this.projects.length === 0){
+      if (this.projects.length === 0) {
         // set flex to projects-case
         document.getElementById('projects-case').classList.remove('grid');
         document.getElementById('not-found').classList.remove('hidden');
-        
-      }else{
+
+      } else {
         // set grid to projects-case
         document.getElementById('projects-case').classList.add('grid');
         document.getElementById('not-found').classList.add('hidden');
       }
-      
+
     },
     hiddeSection() {
       document.getElementById('filter-menu').classList.toggle('hidden');
@@ -308,6 +333,9 @@ export default {
       return projectArray.filter(project => {
         return filters.some(filter => project.tech.includes(filter)); // change here your condition 'some' or 'every'
       });
+    },
+    toggleDescription(project) {
+      project.showFullDescription = !project.showFullDescription;
     },
   },
 };

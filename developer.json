@@ -173,7 +173,7 @@
         },
         "6": {
             "title": "NEUB CodeLand Forum Website",
-            "description": "This was my first dynamic website project using php.",
+            "description": "This was my first dynamic website project using php. This was a forum website for my university's programmers ccommunity",
             "img": "/images/projects/codeland.jpeg",
             "tech": [
                 "PHP"
