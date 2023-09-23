@@ -122,6 +122,18 @@
     },
     "projects": {
         "1": {
+            "title": "Project Xero-Campus",
+            "description": "This is one of my React Personal Projects I am currently developing using Next JS Full Stack, React on Node JS. This project is intended to manage any kind of educational institute with built-in features such as student management, class management, course management, notice board, result publication, institute management, etc. This utilizing technologies such as redix UI, MongoDB, Next Serverless API, Custom Theme System etc. [Note: this is an ongoing project so anything can be changed as demonstrated in the video]",
+            "img": "/images/projects/project-xero-campus.png",
+            "tech": [
+                "NextJS",
+                "NodeJS",
+                "React",
+                "JavaScript"
+            ],
+            "url": "https://youtu.be/khHK6yo1-vs"
+        },
+        "2": {
             "title": "ReachMe-Social Media",
             "description": "This social media website is built using PHP, HTML5, CSS3, and JavaScript, featuring chat, posts, likes, comments, sharing, and media uploads. It includes friendlists, notifications, admin and moderator panels, utilizing technologies like jQuery, AJAX, MySQL, Bootstrap, Font Awesome, Google Fonts, and CKEditor.",
             "img": "/images/projects/reachme.jpg",
@@ -131,7 +143,7 @@
             ],
             "url": "https://youtu.be/ICv4IHnHEuc"
         },
-        "2": {
+        "3": {
             "title": "Foodie-Restaurant Finder",
             "description": "This is a restaurant & food review and reccomendation website built using PHP, HTML5, CSS3, and JavaScript, featuring restaurant search, reviews, ratings, and recommendations. It includes user profiles, friendlists, notifications, admin and moderator panels, utilizing technologies like jQuery, AJAX, MySQL, Bootstrap, Font Awesome, Google Fonts, and CKEditor.",
             "img": "/images/projects/foodie.jpeg",
@@ -141,7 +153,7 @@
             ],
             "url": "https://youtu.be/djQF7OkdLpY"
         },
-        "3": {
+        "4": {
             "title": "Python Robot Controller",
             "description": "This is a python GUI to control a robot, this project is currently under a PhD research, so can't reveal much of it.",
             "img": "/images/projects/python-gui.png",
@@ -151,7 +163,7 @@
             ],
             "url": "https://github.com/arnabxero"
         },
-        "4": {
+        "5": {
             "title": "Python Robot Controller 2",
             "description": "This is another python GUI to control a bio-robotic sensory system, this project is currently under a PhD research, so can't reveal much of it.",
             "img": "/images/projects/python-gui2.png",
@@ -161,7 +173,7 @@
             ],
             "url": "https://github.com/arnabxero"
         },
-        "5": {
+        "6": {
             "title": "Robotic Arm with Auto & Manual Control",
             "description": "I made an robotic arm controllable semi automatically or full manually by the control panel. I was initially planned to use glove control but lack of fund and materials/components forced me to implement the arm with the control panel instead of using a hand glove control.",
             "img": "/images/projects/robotic-arm.jpeg",
@@ -171,7 +183,7 @@
             ],
             "url": "https://youtu.be/O0rxHLX0vk0"
         },
-        "6": {
+        "7": {
             "title": "NEUB CodeLand Forum Website",
             "description": "This was my first dynamic website project using php. This was a forum website for my university's programmers ccommunity",
             "img": "/images/projects/codeland.jpeg",
@@ -180,7 +192,7 @@
             ],
             "url": "https://youtu.be/Y_G0NQBbZ44"
         },
-        "7": {
+        "8": {
             "title": "Automated Water Pump Controller",
             "description": "This is one of my IoT projects, I made this to control the water pump automatically based on the water level in the tank.",
             "img": "/images/projects/waterlevel.jpeg",
@@ -189,7 +201,7 @@
             ],
             "url": "https://youtu.be/wd-rCnabbLY"
         },
-        "8": {
+        "9": {
             "title": "Game - Cave Advemture",
             "description": "This is a simple 2D game I made using Java Swing and AWT.",
             "img": "/images/projects/horror-cave.jpeg",
@@ -198,7 +210,7 @@
             ],
             "url": "https://youtu.be/WOkC11EPrkU"
         },
-        "9": {
+        "10": {
             "title": "Internet Controlled Robotics Car",
             "description": "This is a robotic car that can be controlled via wifi locally and also can be controlled via internet from anywhere in the world.",
             "img": "/images/projects/esp-car.jpeg",
@@ -208,7 +220,7 @@
             ],
             "url": "https://youtu.be/q7FhLXdcjRc"
         },
-        "10": {
+        "11": {
             "title": "Simple Calculator App",
             "description": "This is a simple calculator app I made using Java Swing and AWT.",
             "img": "/images/projects/java-calculator.png",
@@ -217,7 +229,7 @@
             ],
             "url": "https://youtu.be/-427HjhFchQ"
         },
-        "11": {
+        "12": {
             "title": "Bank Management Application",
             "description": "This is a bank management app I made using Java Swing and AWT.",
             "img": "/images/projects/bank.jpg",
@@ -226,7 +238,7 @@
             ],
             "url": "https://youtu.be/-BAdWcUSlS8"
         },
-        "12": {
+        "13": {
             "title": "Demo Operating System",
             "description": "This is a demo operating system and file manager app I made using Java Swing and AWT.",
             "img": "/images/projects/os.jpg",

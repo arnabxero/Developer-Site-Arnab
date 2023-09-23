@@ -280,7 +280,7 @@ export default {
   data() {
     return {
       //techs: ['React', 'HTML', 'CSS', 'Vue', 'Angular', 'Gatsby', 'Flutter'],
-      techs: ['PHP', 'Python', 'Java', 'JavaScript', 'C++', 'Robotics', 'IoT'],
+      techs: ['NodeJS', 'NextJS', 'React', 'PHP', 'Python', 'Java', 'JavaScript', 'C++', 'Robotics', 'IoT'],
       filters: ['all'],
       projects: '',
       loading: true,
