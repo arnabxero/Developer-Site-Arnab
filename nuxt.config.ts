@@ -30,13 +30,13 @@ export default defineNuxtConfig({
         { hid: 'og:title', property: 'og:title', content: siteTitle },
         { hid: 'og:site_name', property: 'og:site_name', content: 'Eftakhar Ahmed Arnob' },
         { hid: 'og:description', property: 'og:description', content: 'Eftakhar Ahmed Arnob\'s Personal Website.' },
-        { hid: 'og:image', property: 'og:image', content: 'demo-share.jpg' },
+        { hid: 'og:image', property: 'og:image', content: 'https://arnob.dev/demo-share.jpg' },
         { hid: 'og:url', property: 'og:url', content: 'https://arnob.dev/' },
 
         { hid: 'twitter:title', property: 'twitter:title', content: siteTitle },
         { hid: 'twitter:site_name', property: 'twitter:site_name', content: 'Eftakhar Ahmed Arnob' },
         { hid: 'twitter:description', property: 'twitter:description', content: 'Eftakhar Ahmed Arnob\'s Personal Website.' },
-        { hid: 'twitter:image', property: 'twitter:image', content: 'demo-share.jpg' },
+        { hid: 'twitter:image', property: 'twitter:image', content: 'https://arnob.dev/demo-share.jpg' },
         { hid: 'twitter:url', property: 'twitter:url', content: 'https://arnob.dev/' },
 
         { name: 'theme-color', content: '#010C15' },
@@ -44,7 +44,7 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'manifest', href: 'pwa/manifest.json' },
-        { rel: 'apple-touch-icon', href: 'pwa/icons/apple-touch-icon.png' },
+        { rel: 'apple-touch-icon', href: 'https://arnob.dev/logo.png' },
       ],
     },
   },
