@@ -325,6 +325,12 @@ export default {
 
     // When the component is mounted, we can remove the loader.
     this.loading = false
+
+    // Add the og:site_name meta tag
+    const meta = document.createElement("meta");
+    meta.setAttribute("property", "og:site_name");
+    meta.content = "Eftakhar Ahmed Arnob";
+    document.head.appendChild(meta);
   },
   beforeDestroy() {
     // Remove the event listener when the component is destroyed.
