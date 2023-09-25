@@ -325,18 +325,6 @@ export default {
 
     // When the component is mounted, we can remove the loader.
     this.loading = false
-
-    // Add the og:site_name meta tag
-    const meta = document.createElement("meta");
-    meta.setAttribute("property", "og:site_name");
-    meta.content = "Eftakhar Ahmed Arnob";
-    document.head.appendChild(meta);
-
-    // Add the google-site-verification meta tag
-    const googleSiteVerificationMeta = document.createElement("meta");
-    googleSiteVerificationMeta.setAttribute("name", "google-site-verification");
-    googleSiteVerificationMeta.content = "aDg-Kty_BgtyE7zy4alBql8cK5uPH2F5x2lsYwFU-OY";
-    document.head.appendChild(googleSiteVerificationMeta);
   },
   beforeDestroy() {
     // Remove the event listener when the component is destroyed.

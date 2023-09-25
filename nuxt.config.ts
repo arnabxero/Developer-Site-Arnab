@@ -24,11 +24,21 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { hid: 'description', name: 'description', content: 'A awesome developer portfolio design.' },
+        { name: 'google-site-verification', content: 'aDg-Kty_BgtyE7zy4alBql8cK5uPH2F5x2lsYwFU-OY' },
+
+        { hid: 'description', name: 'description', content: 'Eftakhar Ahmed Arnob\'s Personal Website.' },
         { hid: 'og:title', property: 'og:title', content: siteTitle },
-        { hid: 'og:description', property: 'og:description', content: 'A awesome developer portfolio design.' },
+        { hid: 'og:site_name', property: 'og:site_name', content: 'Eftakhar Ahmed Arnob' },
+        { hid: 'og:description', property: 'og:description', content: 'Eftakhar Ahmed Arnob\'s Personal Website.' },
         { hid: 'og:image', property: 'og:image', content: 'demo-share.jpg' },
-        { hid: 'og:url', property: 'og:url', content: 'https://developer-portfolio-v1.netlify.app/' },
+        { hid: 'og:url', property: 'og:url', content: 'https://arnob.dev/' },
+
+        { hid: 'twitter:title', property: 'twitter:title', content: siteTitle },
+        { hid: 'twitter:site_name', property: 'twitter:site_name', content: 'Eftakhar Ahmed Arnob' },
+        { hid: 'twitter:description', property: 'twitter:description', content: 'Eftakhar Ahmed Arnob\'s Personal Website.' },
+        { hid: 'twitter:image', property: 'twitter:image', content: 'demo-share.jpg' },
+        { hid: 'twitter:url', property: 'twitter:url', content: 'https://arnob.dev/' },
+
         { name: 'theme-color', content: '#010C15' },
         // ...
       ],
@@ -52,7 +62,7 @@ export default defineNuxtConfig({
       '~/components',
     ],
   },
-  
+
   /**
    * * Tailwind CSS Config
    * Options: https://tailwindcss.nuxt.dev/getting-started/options/
