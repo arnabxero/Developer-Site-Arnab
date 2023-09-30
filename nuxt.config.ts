@@ -44,27 +44,27 @@ export default defineNuxtConfig({
       ],
 
       // Add your JSON-LD structured data script here
-      script: [
-        {
-          hid: 'json-ld-structured-data', // Unique identifier for the script
-          innerHTML: JSON.stringify({
-            "@context": "https://schema.org/",
-            "@type": "WebSite",
-            "name": "Eftakhar Ahmed Arnob",
-            "alternateName": "ArnabXero",
-            "url": "https://arnob.dev/",
-            "potentialAction": {
-              "@type": "SearchAction",
-              "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": "https://arnob.dev/{search_term_string}"
-              },
-              "query-input": "required name=search_term_string"
-            }
-          }),
-          type: 'application/ld+json',
-        }
-      ]
+      // script: [
+      //   {
+      //     hid: 'json-ld-structured-data', // Unique identifier for the script
+      //     innerHTML: JSON.stringify({
+      //       "@context": "https://schema.org/",
+      //       "@type": "WebSite",
+      //       "name": "Eftakhar Ahmed Arnob",
+      //       "alternateName": "ArnabXero",
+      //       "url": "https://arnob.dev/",
+      //       "potentialAction": {
+      //         "@type": "SearchAction",
+      //         "target": {
+      //           "@type": "EntryPoint",
+      //           "urlTemplate": "https://arnob.dev/{search_term_string}"
+      //         },
+      //         "query-input": "required name=search_term_string"
+      //       }
+      //     }),
+      //     type: 'application/ld+json',
+      //   }
+      // ]
     }
   },
 
