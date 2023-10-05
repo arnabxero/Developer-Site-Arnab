@@ -80,7 +80,7 @@
                 <img v-for="tech in project.tech" :key="tech" :src="'/icons/techs/filled/' + tech + '.svg'" alt=""
                   class="w-6 h-6 mx-1 hover:opacity-75">
               </div>
-              <img id="showcase" :src="project.img" alt="" class="">
+              <a :href="project.img" target="_blank"><img id="showcase" :src="project.img" alt="" class=""></a>
             </div>
 
             <div class="pb-8 pt-6 px-6 border-top">
