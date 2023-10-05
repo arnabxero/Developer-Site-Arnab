@@ -2,15 +2,15 @@
     <div id="loader">
         <div id="wrapperload">
             <div class="elem">
-                <p style="font-weight: bold; color: #f99c84;">Hey! This Is Not Your Regular Developer!</p>
+                <p style="font-weight: bold; color: #00ff2a;">Hey! This Is Not Your Regular Developer!</p>
             </div>
             <div class="elem">
-                <p style="font-weight: bold; color: #56adfe;">Lets Explore Something New Today, Together</p>
+                <p style="font-weight: bold; color: #f6fe56;">Lets Explore Something New!</p>
             </div>
             <div class="elem">
-                <p style="font-weight: bold; color: #00ddff;">Enter The World of Relentless Innovation</p>
+                <p style="font-weight: bold; color: #00ddff;">Welcome to Arnob's World!</p>
             </div>
-            <div class="elem">
+            <!-- <div class="elem">
                 <p style="font-weight: bold; color: #4848ff;">Unleash The Power of Software Engineering</p>
             </div>
             <div class="elem">
@@ -20,11 +20,11 @@
                 <p style="font-weight: bold; color: #ffe227;">Explore The Uncharted Territories of a Researcher</p>
             </div>
             <div class="elem">
-                <p style="font-weight: bold; color: #ff00ff;">This is Eftakhar Ahmed Arnob</p>
+                <p style="font-weight: bold; color: #ff00ff;">Welcome to Eftakhar Ahmed Arnob's World</p>
             </div>
             <div class="elem">
                 <p style="font-weight: bold; color: #E4B286;">And Welcome to my world!</p>
-            </div>
+            </div> -->
         </div>
     </div>
 </template>
@@ -51,7 +51,7 @@ export default {
     width: 100%;
     height: 100%;
     background-color: var(--loaderbg);
-    animation: anim2 1s cubic-bezier(0.19, 1, 0.22, 1) 15s both;
+    animation: anim2 1s cubic-bezier(0.19, 1, 0.22, 1) 5s both;
     text-align: center;
 }
 
@@ -93,7 +93,7 @@ export default {
     animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 5s both;
 }
 
-#wrapperload .elem:nth-child(4) {
+/* #wrapperload .elem:nth-child(4) {
     animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 7s both;
 }
 
@@ -111,7 +111,7 @@ export default {
 
 #wrapperload .elem:nth-child(8) {
     animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 15s both;
-}
+} */
 
 @keyframes anim {
     to {
