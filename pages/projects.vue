@@ -171,7 +171,7 @@
 }
 
 #window {
-  max-height: 120px;
+  max-height: 250px;
   position: relative;
   overflow: hidden;
 }
