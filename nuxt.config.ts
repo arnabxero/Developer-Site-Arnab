@@ -52,7 +52,15 @@ export default defineNuxtConfig({
             "@type": "WebSite",
             "name": "Eftakhar Ahmed Arnob",
             "alternateName": "ArnabXero",
-            "url": "https://arnob.dev/"
+            "url": "https://arnob.dev/",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://arnob.dev/{search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
           }),
           type: 'application/ld+json',
         }
