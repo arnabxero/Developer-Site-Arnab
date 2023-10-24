@@ -121,8 +121,20 @@
         "2": "ddf935bc394fc6829341a5e1a62410cd"
     },
     "projects": {
+        "0": {
+            "title": "AI-Directory WebApp",
+            "description": "This is a web application where user can find various AI platform information. Developed with MERN Stack and have functionalities such as Admin Dashboard, Email Subscription, Sign up, Login, Data Submission, Bookmark etc. Live Demo:https: //ai-directory.vercel.app",
+            "img": "/images/projects/ai-directory-app.png",
+            "tech": [
+                "NextJS",
+                "NodeJS",
+                "React",
+                "JavaScript"
+            ],
+            "url": "https://youtu.be/gmDstNSQ398"
+        },
         "1": {
-            "title": "Project Xero-Campus",
+            "title": "Project Xero-Campus 2",
             "description": "This is one of my React Personal Projects I am currently developing using Next JS Full Stack, React on Node JS. This project is intended to manage any kind of educational institute with built-in features such as student management, class management, course management, notice board, result publication, institute management, etc. This utilizing technologies such as redix UI, MongoDB, Next Serverless API, Custom Theme System etc. [Note: this is an ongoing project so anything can be changed as demonstrated in the video]",
             "img": "/images/projects/project-xero-campus.png",
             "tech": [
