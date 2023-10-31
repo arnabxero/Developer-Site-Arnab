@@ -186,7 +186,7 @@
             "url": "https://github.com/arnabxero"
         },
         "6": {
-            "title": "Robotic Arm with Auto & Manual Control",
+            "title": "Robotic Arm",
             "description": "I made an robotic arm controllable semi automatically or full manually by the control panel. I was initially planned to use glove control but lack of fund and materials/components forced me to implement the arm with the control panel instead of using a hand glove control.",
             "img": "/images/projects/robotic-arm.jpeg",
             "tech": [
@@ -205,7 +205,7 @@
             "url": "https://youtu.be/Y_G0NQBbZ44"
         },
         "8": {
-            "title": "Automated Water Pump Controller",
+            "title": "Automated Water Pump",
             "description": "This is one of my IoT projects, I made this to control the water pump automatically based on the water level in the tank.",
             "img": "/images/projects/waterlevel.jpeg",
             "tech": [
@@ -215,7 +215,7 @@
         },
         "9": {
             "title": "Game - Cave Advemture",
-            "description": "This is a simple 2D game I made using Java Swing and AWT.",
+            "description": "This is a simple 2D game I made using Java Swing and AWT. I utilized object oriented programming to create this game.",
             "img": "/images/projects/horror-cave.jpeg",
             "tech": [
                 "Java"
@@ -223,7 +223,7 @@
             "url": "https://youtu.be/WOkC11EPrkU"
         },
         "10": {
-            "title": "Internet Controlled Robotics Car",
+            "title": "Internet Controlled Car",
             "description": "This is a robotic car that can be controlled via wifi locally and also can be controlled via internet from anywhere in the world.",
             "img": "/images/projects/esp-car.jpeg",
             "tech": [
@@ -234,7 +234,7 @@
         },
         "11": {
             "title": "Simple Calculator App",
-            "description": "This is a simple calculator app I made using Java Swing and AWT.",
+            "description": "This is a simple calculator app I made using Java Swing and AWT. I utilized object oriented programming for this project too.",
             "img": "/images/projects/java-calculator.png",
             "tech": [
                 "Java"
@@ -243,7 +243,7 @@
         },
         "12": {
             "title": "Bank Management Application",
-            "description": "This is a bank management app I made using Java Swing and AWT.",
+            "description": "This is a bank management app I made using Java Swing and AWT. This project was done using OOP to demonstrate how to manage and maintain a banking system.",
             "img": "/images/projects/bank.jpg",
             "tech": [
                 "Java"

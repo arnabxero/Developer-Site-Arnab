@@ -160,6 +160,8 @@
 #showcase {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
+  height: 200px;
+  width: 500px;
 }
 
 #view-button {
