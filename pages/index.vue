@@ -40,7 +40,7 @@
           </a>
         </p>
         <span id="info">
-          <a href="files/CV of Eftakhar Ahmed Arnob_11_October_2023.pdf" style="color:white; font-weight: bold;"
+          <a href="files/CV of Eftakhar Ahmed Arnob_20_November_2023.pdf" style="color:white; font-weight: bold;"
             class="btn btn-primary">Download
             CV</a>
         </span>
@@ -49,6 +49,7 @@
 
     <section data-aos="fade-up" class="game" v-if="!isMobile">
       <SnakeGame />
+      <!-- <MyImage /> -->
     </section>
 
   </main>
