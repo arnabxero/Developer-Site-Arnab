@@ -40,7 +40,7 @@
           </a>
         </p>
         <span id="info">
-          <a href="files/CV of Eftakhar Ahmed Arnob_4_May_2024.pdf" style="color:white; font-weight: bold;"
+          <a href="files/Original CV/CV of Eftakhar Ahmed Arnob_4_May_2024.pdf" style="color:white; font-weight: bold;"
             class="btn btn-primary">Download
             CV</a>
         </span>
